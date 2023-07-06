@@ -5,4 +5,8 @@
 /*.rbxlx.lock
 /*.rbxl.lock
 
-build
+/build
+build/index.html
+build/api/Maid/index.html
+build/api/index.html
+build/404.html
