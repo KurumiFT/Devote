@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[8],{63891:e=>{e.exports=JSON.parse('{"sourceUrl":"https://github.com/KurumiFT/Devote/blob/master","baseUrl":"/Devote/","classOrder":[],"apiCategories":[]}')}}]);
