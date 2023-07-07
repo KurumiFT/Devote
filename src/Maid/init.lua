@@ -1,5 +1,7 @@
 type Maid = {
-
+    Destroy : () -> (),
+    Add : (...Garbage) -> ...Garbage,
+    Clean : () -> ()
 }
 
 --[=[
@@ -10,11 +12,11 @@ type Maid = {
     Table used as `Garbage` should implement `Destroy` method
 
     ```lua
-        ...
-        local Signal = require(Packages.Signal)
+    -- Requires
+    local Signal = require(Packages.Signal)
 
-        local myMaid = Maid.new()
-        local mySignal = myMaid:Add(Signal.new()) -- Signal implement Destroy method
+    local myMaid = Maid.new()
+    local mySignal = myMaid:Add(Signal.new()) -- Signal implement Destroy method
     ```
 ]=]
 type Garbage = Instance | table | RBXScriptConnection
@@ -29,7 +31,7 @@ type Garbage = Instance | table | RBXScriptConnection
 
 --[=[ 
     @class Maid
-    Class for preventing memory leaks
+    Component for preventing memory leaks
 ]=]
 local Maid = {}
 local function getCleanUpMethod(object : Garbage)
@@ -39,7 +41,7 @@ local function getCleanUpMethod(object : Garbage)
     if objectType == 'function' then return end
     if objectType == 'RBXScriptConnection' then return 'Disconnect' end
 
-    error('Unsupported type!', 2)
+    return 'Destroy'
 end
 
 local function cleanUp(object : Garbage)
@@ -76,14 +78,14 @@ end
     :::
 
     ```lua
-        self.myMaid = Maid.new()
-        self.myMaid['Frame'] = Frame -- Attach Frame to Maid
+    self.myMaid = Maid.new()
+    self.myMaid['Frame'] = Frame -- Attach Frame to Maid
 
-        -- In other function
-        if self.myMaid['Frame'] then
-            self.myMaid['Frame'].BackgroundTransparency = 1
-            ...
-        end
+    -- In other function
+    if self.myMaid['Frame'] then
+        self.myMaid['Frame'].BackgroundTransparency = 1
+        ...
+    end
      ```
 ]=]
 Maid.__newindex = function(self, index, value)
@@ -98,7 +100,7 @@ end
     Return new `Maid` object
 
     ```lua
-        local myMaid = Maid.new()
+    local myMaid = Maid.new()
     ```
 ]=]
 function Maid.new(... : Garbage?) : Maid
@@ -111,10 +113,10 @@ end
     Push Garbage into Maid
 
     ```lua
-        local vfxPart = Instance.new('Part')
-        ...
+    local vfxPart = Instance.new('Part')
+    -- TODO
 
-        myMaid:Add(vfxPart)
+    myMaid:Add(vfxPart)
     ```
 
     :::note
@@ -133,14 +135,14 @@ end
    Clean Maid from Garbage
 
     ```lua
-        local myMaid = Maid.new()
-        myMaid['testInstance'] = Instance.new('Part')
+    local myMaid = Maid.new()
+    myMaid['testInstance'] = Instance.new('Part')
         
-        print(myMaid['testInstance']) -- Part
+    print(myMaid['testInstance']) -- Part
 
-        myMaid:Destroy()
+    myMaid:Destroy()
 
-        print(myMaid['testInstance']) -- nil
+    print(myMaid['testInstance']) -- nil
     ```
 ]=]
 function Maid:Destroy()
@@ -155,14 +157,14 @@ end
     *Allias of `Maid:Destroy()`*
 
     ```lua
-        local myMaid = Maid.new()
-        myMaid['testInstance'] = Instance.new('Part')
+    local myMaid = Maid.new()
+    myMaid['testInstance'] = Instance.new('Part')
         
-        print(myMaid['testInstance']) -- Part
+    print(myMaid['testInstance']) -- Part
 
-        myMaid:Clean()
+    myMaid:Clean()
 
-        print(myMaid['testInstance']) -- nil
+    print(myMaid['testInstance']) -- nil
     ```
 ]=]
 function Maid:Clean()
