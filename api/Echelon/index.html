@@ -4,15 +4,15 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v2.3.1">
 <title data-rh="true">Echelon | Devote</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://KurumiFT.github.io/Devote/api/Echelon"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><meta data-rh="true" property="og:title" content="Echelon | Devote"><meta data-rh="true" name="description" content="Component for easier, safer and more convenient work with Instance"><meta data-rh="true" property="og:description" content="Component for easier, safer and more convenient work with Instance"><link data-rh="true" rel="canonical" href="https://KurumiFT.github.io/Devote/api/Echelon"><link data-rh="true" rel="alternate" href="https://KurumiFT.github.io/Devote/api/Echelon" hreflang="en"><link data-rh="true" rel="alternate" href="https://KurumiFT.github.io/Devote/api/Echelon" hreflang="x-default"><link rel="stylesheet" href="/Devote/assets/css/styles.19a5646f.css">
-<link rel="preload" href="/Devote/assets/js/runtime~main.985794b3.js" as="script">
-<link rel="preload" href="/Devote/assets/js/main.a523ff2c.js" as="script">
+<link rel="preload" href="/Devote/assets/js/runtime~main.08727c96.js" as="script">
+<link rel="preload" href="/Devote/assets/js/main.df5c3b88.js" as="script">
 </head>
 <body class="navigation-with-keyboard">
 <script>!function(){function e(e){document.documentElement.setAttribute("data-theme",e)}var t=function(){var e=null;try{e=localStorage.getItem("theme")}catch(e){}return e}();null!==t?e(t):window.matchMedia("(prefers-color-scheme: dark)").matches?e("dark"):(window.matchMedia("(prefers-color-scheme: light)").matches,e("light"))}()</script><div id="__docusaurus">
 <div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/Devote/"><b class="navbar__title text--truncate">Devote</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/Devote/api/">API</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/KurumiFT/Devote" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="searchBox_ZlJk"><div class="navbar__search"><span aria-label="expand searchbar" role="button" class="search-icon" tabindex="0"></span><input type="search" id="search_input_react" placeholder="Press S to Search..." aria-label="Search" class="navbar__search-input search-bar"></div></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0 docPageContainer_wNNk"><div class="docPage_Dpn1"><div class="docSidebarContainer_o_re"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" href="/Devote/api/Echelon">​Echelon</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/Devote/api/Maid">​Maid</a></li></ul></nav></div></div><main class="docMainContainer_HJE1"><div class="container padding-vert--lg"><div class="row"><div class="col docItemCol_MU3C"><div class="docItemContainer_Wv98"><article><div class="member_J0w1 markdown"><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_oUs_"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><header><h1 class="docTitle_mZRt" style="text-decoration:none"><span style="display:inline-block">Echelon</span></h1><div class="luaClassTags_EipM"></div><label class="privateToggle_lmfE"><span class="privateCheckboxContainer_psRa"><input type="checkbox" class="privateCheckboxInternal_IKP2" name="checkbox"><span class="privateCheckboxControl_Ov8U"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="3" d="M4 11.91l5.37 5.37L19.79 5.59"></path></svg></span></span><span class="privateCheckboxLabel_Vmvs">Show Private</span></label><div>
 <p>Component for easier, safer and more convenient work with Instance</p>
-</div></header><h2 class="anchor anchorWithStickyNavbar_LWe7" id="functions">Functions<a href="#functions" class="hash-link" aria-label="Direct link to Functions" title="Direct link to Functions">​</a></h2><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="__index"><code style="text-decoration:none">__index</code><a href="#__index" class="hash-link" aria-label="Direct link to __index" title="Direct link to __index">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/KurumiFT/Devote/blob/master/src/Echelon/init.lua#L53"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Echelon<!-- -->.</code><code class="green_DgR4">__index</code><code>(</code><code>index<!-- -->: </code><code class="blue_P4bS">string</code><code>) → </code><code class="purple_ieR2">(</code><code class="green_DgR4">(</code><code class="blue_P4bS">...any</code><code class="green_DgR4">)</code><code class="green_DgR4"> → </code><code class="green_DgR4">(</code><code class="blue_P4bS">...any</code><code class="green_DgR4">)</code><code class="purple_ieR2">)</code><code class="op_lSLc"> | </code><code class="blue_P4bS">any</code></div><div>
-<p>Return Echelon's method or <a href="#instance">Instance's</a> property / child if Echelon don't have it</p>
+</div></header><h2 class="anchor anchorWithStickyNavbar_LWe7" id="functions">Functions<a href="#functions" class="hash-link" aria-label="Direct link to Functions" title="Direct link to Functions">​</a></h2><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="__index"><code style="text-decoration:none">__index</code><a href="#__index" class="hash-link" aria-label="Direct link to __index" title="Direct link to __index">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/KurumiFT/Devote/blob/master/src/Echelon/init.lua#L78"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Echelon<!-- -->.</code><code class="green_DgR4">__index</code><code>(</code><code>index<!-- -->: </code><code class="blue_P4bS">string</code><code>) → </code><code class="purple_ieR2">(</code><code class="green_DgR4">(</code><code class="blue_P4bS">...any</code><code class="green_DgR4">)</code><code class="green_DgR4"> → </code><code class="green_DgR4">(</code><code class="blue_P4bS">...any</code><code class="green_DgR4">)</code><code class="purple_ieR2">)</code><code class="op_lSLc"> | </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/Devote/api/Echelon">Echelon</a></code><code class="op_lSLc"> | </code><code class="blue_P4bS">any</code></div><div>
+<p>Return Echelon's method if it exist or <a href="#instance">Instance's</a> child as new Echelon or instance prop</p>
 <div class="admonition admonition-tip alert alert--success">
   <div class="admonition-heading">
     <h5><span class="admonition-icon"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16">
@@ -20,26 +20,69 @@
         </svg></span>tip</h5>
   </div>
   <div class="admonition-content">
-    <pre><code>Use it for getting your instance property, don't get instance by yourself!
+    <pre><code>Use it for getting your instance property / child, don't get instance from Echelon by yourself!
 </code></pre>
   </div>
 </div>
-<pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> myEon <span class="token operator">=</span> Echelon<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token string">'Part'</span><span class="token punctuation">)</span>
+<pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> VFXAsset <span class="token operator">=</span> <span class="token punctuation">...</span>
+
+<span class="token keyword">local</span> myEon <span class="token operator">=</span> Echelon<span class="token punctuation">.</span><span class="token function">from</span><span class="token punctuation">(</span>VFXAsset<span class="token punctuation">,</span> <span class="token keyword">true</span><span class="token punctuation">)</span>
 myEon<span class="token punctuation">:</span><span class="token function">Setup</span><span class="token punctuation">(</span><span class="token punctuation">...</span><span class="token punctuation">)</span> <span class="token comment">-- Get Echelon's method</span>
 <span class="token function">print</span><span class="token punctuation">(</span>myEon<span class="token punctuation">.</span>Transparency<span class="token punctuation">)</span> <span class="token comment">-- Get Transparency prop from instance</span>
+myEon<span class="token punctuation">.</span>ParticleEmitter<span class="token punctuation">:</span><span class="token function">Setup</span><span class="token punctuation">(</span><span class="token punctuation">{</span>Rate <span class="token operator">=</span> <span class="token number">50</span><span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token comment">-- Get VFXAsset child and setup it</span>
 </code></pre>
-</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="new"><code style="text-decoration:none">new</code><a href="#new" class="hash-link" aria-label="Direct link to new" title="Direct link to new">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/KurumiFT/Devote/blob/master/src/Echelon/init.lua#L65"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Echelon<!-- -->.</code><code class="green_DgR4">new</code><code>(</code><code>className<!-- -->: </code><code class="blue_P4bS">string</code><code>) → </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/Devote/api/Echelon">Echelon</a></code></div><div>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="new"><code style="text-decoration:none">new</code><a href="#new" class="hash-link" aria-label="Direct link to new" title="Direct link to new">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/KurumiFT/Devote/blob/master/src/Echelon/init.lua#L107"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Echelon<!-- -->.</code><code class="green_DgR4">new</code><code>(</code><code>className<!-- -->: </code><code class="blue_P4bS">string</code><code>) → </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/Devote/api/Echelon">Echelon</a></code></div><div>
 <p>Return new <code>Echelon</code> object from ClassName</p>
 <pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> myEon <span class="token operator">=</span> Echelon<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token string">'Part'</span><span class="token punctuation">)</span>
 </code></pre>
-</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="from"><code style="text-decoration:none">from</code><a href="#from" class="hash-link" aria-label="Direct link to from" title="Direct link to from">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/KurumiFT/Devote/blob/master/src/Echelon/init.lua#L81"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Echelon<!-- -->.</code><code class="green_DgR4">from</code><code>(</code><div class="inset_uKQm"><div><code>instance<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/datatype/Instance" target="_blank" rel="noopener noreferrer">Instance<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code><code>,</code></div><div><code>shouldClone<!-- -->: </code><code class="blue_P4bS">boolean</code><span class="inlineDescription_G7Er">-- <span>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="from"><code style="text-decoration:none">from</code><a href="#from" class="hash-link" aria-label="Direct link to from" title="Direct link to from">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/KurumiFT/Devote/blob/master/src/Echelon/init.lua#L124"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Echelon<!-- -->.</code><code class="green_DgR4">from</code><code>(</code><div class="inset_uKQm"><div><code>instance<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/datatype/Instance" target="_blank" rel="noopener noreferrer">Instance<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code><code>,</code></div><div><code>shouldClone<!-- -->: </code><code class="blue_P4bS">boolean?</code><code>,</code><span class="inlineDescription_G7Er">-- <span>
 <p>Should given instance be cloned</p>
+</span></span></div><div><code>cacheInfo<!-- -->: </code><code class="purple_ieR2">{</code><span><code>[</code><code class="blue_P4bS">string</code><code>]</code></span><code>: </code><code class="blue_P4bS">any</code><code class="purple_ieR2">}</code><code class="blue_P4bS">?</code><span class="inlineDescription_G7Er">-- <span>
+<p>Private field</p>
 </span></span></div></div><code>) → </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/Devote/api/Echelon">Echelon</a></code></div><div>
-<p>Return new <code>Echelon</code> object from exist Instance<br>If you use asset that should be cloned, then set <code>true</code> in second argument</p>
+<p>Return new <code>Echelon</code> object from exist Instance (<em>wrapping</em>)<br>If you use asset that should be cloned, then set <code>true</code> in second argument</p>
 <pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> Asset <span class="token operator">=</span> ReplicatedStorage<span class="token punctuation">.</span>FireballAsset
 <span class="token keyword">local</span> myEon <span class="token operator">=</span> Echelon<span class="token punctuation">.</span><span class="token function">from</span><span class="token punctuation">(</span>Asset<span class="token punctuation">,</span> <span class="token keyword">true</span><span class="token punctuation">)</span><span class="token punctuation">:</span><span class="token function">Setup</span><span class="token punctuation">(</span><span class="token punctuation">{</span>Parent <span class="token operator">=</span> workspace<span class="token punctuation">}</span><span class="token punctuation">)</span>
 </code></pre>
-</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="Setup"><code style="text-decoration:none">Setup</code><a href="#Setup" class="hash-link" aria-label="Direct link to Setup" title="Direct link to Setup">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/KurumiFT/Devote/blob/master/src/Echelon/init.lua#L101"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Echelon<!-- -->:</code><code class="green_DgR4">Setup</code><code>(</code><code>props<!-- -->: </code><code class="purple_ieR2">{</code><span><code>[</code><code class="blue_P4bS">string</code><code>]</code></span><code>: </code><code class="blue_P4bS">any</code><code class="purple_ieR2">}</code><code>) → </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/Devote/api/Echelon">Echelon</a></code></div><div>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="cache"><code style="text-decoration:none">cache</code><a href="#cache" class="hash-link" aria-label="Direct link to cache" title="Direct link to cache">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/KurumiFT/Devote/blob/master/src/Echelon/init.lua#L218"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Echelon<!-- -->.</code><code class="green_DgR4">cache</code><code>(</code><div class="inset_uKQm"><div><code>key<!-- -->: </code><code class="blue_P4bS">string</code><code>,</code><span class="inlineDescription_G7Er">-- <span>
+<p>Key for cache section</p>
+</span></span></div><div><code>instance<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/datatype/Instance" target="_blank" rel="noopener noreferrer">Instance<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code><code class="op_lSLc"> | </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/Devote/api/Echelon">Echelon</a></code><code>,</code><span class="inlineDescription_G7Er">-- <span>
+<p>Target instance that should be cached</p>
+</span></span></div><div><code>intial_size<!-- -->: </code><code class="blue_P4bS">number?</code><code>,</code><span class="inlineDescription_G7Er">-- <span>
+<p>Intial size of cache | Default 0</p>
+</span></span></div><div><code>ttl<!-- -->: </code><code class="blue_P4bS">number?</code><span class="inlineDescription_G7Er">-- <span>
+<p>Time to live | Default nil</p>
+</span></span></div></div><code>) → </code><code class="blue_P4bS">nil</code></div><div>
+<p>Assigns an Instance to a Cache Section by key<br>When an instance is cached, it is automatically cloned<br>Don't clone an asset when caching, this can cause undefined behavior.</p>
+<p>When caching, the object is cloned <code>intial_size</code> times, which avoids cloning at times when performance is needed<br><code>ttl</code> - determines when an object is removed from the cache if it is not used for a given amount of time (in seconds).<br><code>0 | nil</code> - the object will be returned and remain in the cache until it is explicitly removed from there</p>
+<pre class="language-lua"><code class="language-lua">Echelon<span class="token punctuation">.</span><span class="token function">cache</span><span class="token punctuation">(</span><span class="token string">'Fireball'</span><span class="token punctuation">,</span> Fireball_Asset<span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">30</span><span class="token punctuation">)</span> <span class="token comment">-- Cache fireball assets with 10 clones at once and TTL = 30</span>
+<span class="token keyword">local</span> myPart <span class="token operator">=</span> Echelon<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token string">'Part'</span><span class="token punctuation">)</span><span class="token punctuation">:</span><span class="token function">Setup</span><span class="token punctuation">(</span><span class="token punctuation">{</span>Anchored <span class="token operator">=</span> <span class="token keyword">true</span><span class="token punctuation">,</span> Transparency <span class="token operator">=</span> <span class="token number">.5</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+Echelon<span class="token punctuation">.</span><span class="token function">cache</span><span class="token punctuation">(</span><span class="token string">'MyPart'</span><span class="token punctuation">,</span> myPart<span class="token punctuation">,</span> <span class="token number">40</span><span class="token punctuation">)</span> <span class="token comment">-- Cache created part with 40 clones at once without lifetime limit</span>
+</code></pre>
+<div class="admonition admonition-tip alert alert--success">
+  <div class="admonition-heading">
+    <h5><span class="admonition-icon"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16">
+          <path d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path>
+        </svg></span>tip</h5>
+  </div>
+  <div class="admonition-content">
+    <pre><code>Cached object is the basis and all new objects in the current cache section will be its clones
+Use caching for frequently used objects, for example lasers / vfx, etc
+</code></pre>
+  </div>
+</div>
+<div class="admonition admonition-warning alert alert--danger">
+  <div class="admonition-heading">
+    <h5><span class="admonition-icon"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16">
+          <path d="M5.05.31c.81 2.17.41 3.38-.52 4.31C3.55 5.67 1.98 6.45.9 7.98c-1.45 2.05-1.7 6.53 3.53 7.7-2.2-1.16-2.67-4.52-.3-6.61-.61 2.03.53 3.33 1.94 2.86 1.39-.47 2.3.53 2.27 1.67-.02.78-.31 1.44-1.13 1.81 3.42-.59 4.78-3.42 4.78-5.56 0-2.84-2.53-3.22-1.25-5.61-1.52.13-2.03 1.13-1.89 2.75.09 1.08-1.02 1.8-1.86 1.33-.67-.41-.66-1.19-.06-1.78C8.18 5.31 8.68 2.45 5.05.32L5.03.3l.02.01z"></path>
+        </svg></span>warning</h5>
+  </div>
+  <div class="admonition-content">
+    <pre><code>If you use an already existing key, the cache will be overwritten and already existing objects will be deleted
+</code></pre>
+  </div>
+</div>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="Setup"><code style="text-decoration:none">Setup</code><a href="#Setup" class="hash-link" aria-label="Direct link to Setup" title="Direct link to Setup">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/KurumiFT/Devote/blob/master/src/Echelon/init.lua#L146"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Echelon<!-- -->:</code><code class="green_DgR4">Setup</code><code>(</code><code>props<!-- -->: </code><code class="purple_ieR2">{</code><span><code>[</code><code class="blue_P4bS">string</code><code>]</code></span><code>: </code><code class="blue_P4bS">any</code><code class="purple_ieR2">}</code><code>) → </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/Devote/api/Echelon">Echelon</a></code></div><div>
 <p>Set properties for Echelon's instance</p>
 <div class="admonition admonition-info alert alert--info">
   <div class="admonition-heading">
@@ -56,9 +99,9 @@ Setting the parent before the set properties triggers a lot of "Changed" events!
 </div>
 <pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> myEon <span class="token operator">=</span> Echelon<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token string">'Part'</span><span class="token punctuation">)</span><span class="token punctuation">:</span><span class="token function">Setup</span><span class="token punctuation">(</span><span class="token punctuation">{</span>Name <span class="token operator">=</span> <span class="token string">'MyPart'</span><span class="token punctuation">,</span> Parent <span class="token operator">=</span> workspace<span class="token punctuation">}</span><span class="token punctuation">)</span>
 </code></pre>
-</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="Tween"><code style="text-decoration:none">Tween</code><a href="#Tween" class="hash-link" aria-label="Direct link to Tween" title="Direct link to Tween">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/KurumiFT/Devote/blob/master/src/Echelon/init.lua#L129"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Echelon<!-- -->:</code><code class="green_DgR4">Tween</code><code>(</code><div class="inset_uKQm"><div><code>tweenInfo<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/datatype/TweenInfo" target="_blank" rel="noopener noreferrer">TweenInfo<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code><code>,</code></div><div><code>target<!-- -->: </code><code class="purple_ieR2">{</code><span><code>[</code><code class="blue_P4bS">any</code><code>]</code></span><code>: </code><code class="blue_P4bS">any</code><code class="purple_ieR2">}</code><code>,</code><span class="inlineDescription_G7Er">-- <span>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="Tween"><code style="text-decoration:none">Tween</code><a href="#Tween" class="hash-link" aria-label="Direct link to Tween" title="Direct link to Tween">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/KurumiFT/Devote/blob/master/src/Echelon/init.lua#L174"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Echelon<!-- -->:</code><code class="green_DgR4">Tween</code><code>(</code><div class="inset_uKQm"><div><code>tweenInfo<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/datatype/TweenInfo" target="_blank" rel="noopener noreferrer">TweenInfo<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code><code>,</code></div><div><code>target<!-- -->: </code><code class="purple_ieR2">{</code><span><code>[</code><code class="blue_P4bS">any</code><code>]</code></span><code>: </code><code class="blue_P4bS">any</code><code class="purple_ieR2">}</code><code>,</code><span class="inlineDescription_G7Er">-- <span>
 <p>Tween's target props</p>
-</span></span></div><div><code>shouldStart<!-- -->: </code><code class="blue_P4bS">boolean</code><span class="inlineDescription_G7Er">-- <span>
+</span></span></div><div><code>shouldStart<!-- -->: </code><code class="blue_P4bS">boolean?</code><span class="inlineDescription_G7Er">-- <span>
 <p>Should start tween immediately</p>
 </span></span></div></div><code>) → </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/class/Tween" target="_blank" rel="noopener noreferrer">Tween<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code></div><div>
 <p>Create tween for Echelon's instance</p>
@@ -76,11 +119,23 @@ myEon<span class="token punctuation">:</span><span class="token function">Tween<
 </code></pre>
   </div>
 </div>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="Destroy"><code style="text-decoration:none">Destroy</code><a href="#Destroy" class="hash-link" aria-label="Direct link to Destroy" title="Direct link to Destroy">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/KurumiFT/Devote/blob/master/src/Echelon/init.lua#L257"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Echelon<!-- -->:</code><code class="green_DgR4">Destroy</code><code>(</code><code>) → </code><code>(</code><code>)</code></div><div>
+<p>Safely destroy Echelon with all instances</p>
+<pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> myEon <span class="token operator">=</span> Echelon<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token string">'Part'</span><span class="token punctuation">)</span>
+myEon<span class="token punctuation">:</span><span class="token function">Destroy</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">-- Destroy myEon object</span>
+myEon<span class="token punctuation">:</span><span class="token function">Setup</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">...</span><span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token comment">-- ERROR!</span>
+</code></pre>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="Debris"><code style="text-decoration:none">Debris</code><a href="#Debris" class="hash-link" aria-label="Direct link to Debris" title="Direct link to Debris">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/KurumiFT/Devote/blob/master/src/Echelon/init.lua#L273"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Echelon<!-- -->:</code><code class="green_DgR4">Debris</code><code>(</code><code>time<!-- -->: </code><code class="blue_P4bS">number</code><code>) → </code><code>(</code><code>)</code></div><div>
+<p>Improved version of <code>Debris:AddItem(Instance)</code>, that can working with caching</p>
+<pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> myEon <span class="token operator">=</span> Echelon<span class="token punctuation">.</span><span class="token function">fromCache</span><span class="token punctuation">(</span><span class="token string">'VFX'</span><span class="token punctuation">)</span><span class="token punctuation">:</span><span class="token function">Setup</span><span class="token punctuation">(</span><span class="token punctuation">{</span>CFrame <span class="token operator">=</span> CFrame<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">,</span> Parent <span class="token operator">=</span> workspace<span class="token punctuation">}</span><span class="token punctuation">)</span>
+myEon<span class="token punctuation">:</span><span class="token function">Tween</span><span class="token punctuation">(</span>TweenInfo<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> Enum<span class="token punctuation">.</span>EasingStyle<span class="token punctuation">.</span>Sine<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>Transparency <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token keyword">true</span><span class="token punctuation">)</span>
+myEon<span class="token punctuation">:</span><span class="token function">Debris</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+</code></pre>
 </div></div></article></div><details><summary>Show raw api</summary><pre style="max-width:100%;white-space:pre-wrap">{
     &quot;functions&quot;: [
         {
             &quot;name&quot;: &quot;__index&quot;,
-            &quot;desc&quot;: &quot;Return Echelon&#x27;s method or [Instance&#x27;s](#instance) property / child if Echelon don&#x27;t have it\n\n:::tip\n    Use it for getting your instance property, don&#x27;t get instance by yourself!\n:::\n\n```lua\nlocal myEon = Echelon.new(&#x27;Part&#x27;)\nmyEon:Setup(...) -- Get Echelon&#x27;s method\nprint(myEon.Transparency) -- Get Transparency prop from instance\n```&quot;,
+            &quot;desc&quot;: &quot;Return Echelon&#x27;s method if it exist or [Instance&#x27;s](#instance) child as new Echelon or instance prop\n\n:::tip\n    Use it for getting your instance property / child, don&#x27;t get instance from Echelon by yourself!\n:::\n\n```lua\nlocal VFXAsset = ...\n\nlocal myEon = Echelon.from(VFXAsset, true)\nmyEon:Setup(...) -- Get Echelon&#x27;s method\nprint(myEon.Transparency) -- Get Transparency prop from instance\nmyEon.ParticleEmitter:Setup({Rate = 50}) -- Get VFXAsset child and setup it\n```&quot;,
             &quot;params&quot;: [
                 {
                     &quot;name&quot;: &quot;index&quot;,
@@ -91,12 +146,12 @@ myEon<span class="token punctuation">:</span><span class="token function">Tween<
             &quot;returns&quot;: [
                 {
                     &quot;desc&quot;: &quot;&quot;,
-                    &quot;lua_type&quot;: &quot;((...any) -&gt; (...any)) | any&quot;
+                    &quot;lua_type&quot;: &quot;((...any) -&gt; (...any)) | Echelon | any&quot;
                 }
             ],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 53,
+                &quot;line&quot;: 78,
                 &quot;path&quot;: &quot;src/Echelon/init.lua&quot;
             }
         },
@@ -118,13 +173,13 @@ myEon<span class="token punctuation">:</span><span class="token function">Tween<
             ],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 65,
+                &quot;line&quot;: 107,
                 &quot;path&quot;: &quot;src/Echelon/init.lua&quot;
             }
         },
         {
             &quot;name&quot;: &quot;from&quot;,
-            &quot;desc&quot;: &quot;Return new `Echelon` object from exist Instance  \n&lt;br/&gt;If you use asset that should be cloned, then set `true` in second argument\n```lua\nlocal Asset = ReplicatedStorage.FireballAsset\nlocal myEon = Echelon.from(Asset, true):Setup({Parent = workspace})\n```&quot;,
+            &quot;desc&quot;: &quot;Return new `Echelon` object from exist Instance (*wrapping*)  \nIf you use asset that should be cloned, then set `true` in second argument\n```lua\nlocal Asset = ReplicatedStorage.FireballAsset\nlocal myEon = Echelon.from(Asset, true):Setup({Parent = workspace})\n```&quot;,
             &quot;params&quot;: [
                 {
                     &quot;name&quot;: &quot;instance&quot;,
@@ -134,7 +189,12 @@ myEon<span class="token punctuation">:</span><span class="token function">Tween<
                 {
                     &quot;name&quot;: &quot;shouldClone&quot;,
                     &quot;desc&quot;: &quot;Should given instance be cloned&quot;,
-                    &quot;lua_type&quot;: &quot;boolean&quot;
+                    &quot;lua_type&quot;: &quot;boolean?&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;cacheInfo&quot;,
+                    &quot;desc&quot;: &quot;Private field&quot;,
+                    &quot;lua_type&quot;: &quot;{[string] : any}?&quot;
                 }
             ],
             &quot;returns&quot;: [
@@ -145,7 +205,7 @@ myEon<span class="token punctuation">:</span><span class="token function">Tween<
             ],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 81,
+                &quot;line&quot;: 124,
                 &quot;path&quot;: &quot;src/Echelon/init.lua&quot;
             }
         },
@@ -167,7 +227,7 @@ myEon<span class="token punctuation">:</span><span class="token function">Tween<
             ],
             &quot;function_type&quot;: &quot;method&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 101,
+                &quot;line&quot;: 146,
                 &quot;path&quot;: &quot;src/Echelon/init.lua&quot;
             }
         },
@@ -188,7 +248,7 @@ myEon<span class="token punctuation">:</span><span class="token function">Tween<
                 {
                     &quot;name&quot;: &quot;shouldStart&quot;,
                     &quot;desc&quot;: &quot;Should start tween immediately&quot;,
-                    &quot;lua_type&quot;: &quot;boolean&quot;
+                    &quot;lua_type&quot;: &quot;boolean?&quot;
                 }
             ],
             &quot;returns&quot;: [
@@ -199,7 +259,89 @@ myEon<span class="token punctuation">:</span><span class="token function">Tween<
             ],
             &quot;function_type&quot;: &quot;method&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 129,
+                &quot;line&quot;: 174,
+                &quot;path&quot;: &quot;src/Echelon/init.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;_getInstance&quot;,
+            &quot;desc&quot;: &quot;Return Instance prop&quot;,
+            &quot;params&quot;: [],
+            &quot;returns&quot;: [
+                {
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;Instance\r\n&quot;
+                }
+            ],
+            &quot;function_type&quot;: &quot;method&quot;,
+            &quot;private&quot;: true,
+            &quot;source&quot;: {
+                &quot;line&quot;: 186,
+                &quot;path&quot;: &quot;src/Echelon/init.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;cache&quot;,
+            &quot;desc&quot;: &quot;Assigns an Instance to a Cache Section by key  \nWhen an instance is cached, it is automatically cloned  \nDon&#x27;t clone an asset when caching, this can cause undefined behavior.  \n\nWhen caching, the object is cloned `intial_size` times, which avoids cloning at times when performance is needed  \n`ttl` - determines when an object is removed from the cache if it is not used for a given amount of time (in seconds).  \n`0 | nil` - the object will be returned and remain in the cache until it is explicitly removed from there\n```lua\nEchelon.cache(&#x27;Fireball&#x27;, Fireball_Asset, 10, 30) -- Cache fireball assets with 10 clones at once and TTL = 30\nlocal myPart = Echelon.new(&#x27;Part&#x27;):Setup({Anchored = true, Transparency = .5})\nEchelon.cache(&#x27;MyPart&#x27;, myPart, 40) -- Cache created part with 40 clones at once without lifetime limit\n```\n\n:::tip\n    Cached object is the basis and all new objects in the current cache section will be its clones\n    Use caching for frequently used objects, for example lasers / vfx, etc\n:::\n\n:::warning\n    If you use an already existing key, the cache will be overwritten and already existing objects will be deleted\n:::&quot;,
+            &quot;params&quot;: [
+                {
+                    &quot;name&quot;: &quot;key&quot;,
+                    &quot;desc&quot;: &quot;Key for cache section&quot;,
+                    &quot;lua_type&quot;: &quot;string&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;instance&quot;,
+                    &quot;desc&quot;: &quot;Target instance that should be cached&quot;,
+                    &quot;lua_type&quot;: &quot;Instance | Echelon&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;intial_size&quot;,
+                    &quot;desc&quot;: &quot;Intial size of cache | Default 0&quot;,
+                    &quot;lua_type&quot;: &quot;number?&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;ttl&quot;,
+                    &quot;desc&quot;: &quot;Time to live | Default nil&quot;,
+                    &quot;lua_type&quot;: &quot;number?&quot;
+                }
+            ],
+            &quot;returns&quot;: [
+                {
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;nil\r\n&quot;
+                }
+            ],
+            &quot;function_type&quot;: &quot;static&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 218,
+                &quot;path&quot;: &quot;src/Echelon/init.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;Destroy&quot;,
+            &quot;desc&quot;: &quot;Safely destroy Echelon with all instances\n\n```lua\nlocal myEon = Echelon.new(&#x27;Part&#x27;)\nmyEon:Destroy() -- Destroy myEon object\nmyEon:Setup({...}) -- ERROR!\n```&quot;,
+            &quot;params&quot;: [],
+            &quot;returns&quot;: [],
+            &quot;function_type&quot;: &quot;method&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 257,
+                &quot;path&quot;: &quot;src/Echelon/init.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;Debris&quot;,
+            &quot;desc&quot;: &quot;Improved version of `Debris:AddItem(Instance)`, that can working with caching\n\n```lua\nlocal myEon = Echelon.fromCache(&#x27;VFX&#x27;):Setup({CFrame = CFrame.new(0, 0, 0), Parent = workspace})\nmyEon:Tween(TweenInfo.new(1, Enum.EasingStyle.Sine), {Transparency = 1}, true)\nmyEon:Debris(1)\n```&quot;,
+            &quot;params&quot;: [
+                {
+                    &quot;name&quot;: &quot;time&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;number&quot;
+                }
+            ],
+            &quot;returns&quot;: [],
+            &quot;function_type&quot;: &quot;method&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 273,
                 &quot;path&quot;: &quot;src/Echelon/init.lua&quot;
             }
         }
@@ -211,30 +353,51 @@ myEon<span class="token punctuation">:</span><span class="token function">Tween<
             &quot;lua_type&quot;: &quot;Instance&quot;,
             &quot;private&quot;: true,
             &quot;source&quot;: {
-                &quot;line&quot;: 16,
+                &quot;line&quot;: 21,
                 &quot;path&quot;: &quot;src/Echelon/init.lua&quot;
             }
         },
         {
             &quot;name&quot;: &quot;Maid&quot;,
-            &quot;desc&quot;: &quot;Contain all Garbage from Echelon as Tweens and Instance &quot;,
+            &quot;desc&quot;: &quot;Contain all Garbage from Echelon as Tweens and Childs&quot;,
             &quot;lua_type&quot;: &quot;Maid&quot;,
             &quot;private&quot;: true,
             &quot;source&quot;: {
-                &quot;line&quot;: 24,
+                &quot;line&quot;: 29,
+                &quot;path&quot;: &quot;src/Echelon/init.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;CacheInfo&quot;,
+            &quot;desc&quot;: &quot;Contain information about linking the echelon to the cache&quot;,
+            &quot;lua_type&quot;: &quot;{[string] : any}?&quot;,
+            &quot;private&quot;: true,
+            &quot;source&quot;: {
+                &quot;line&quot;: 37,
                 &quot;path&quot;: &quot;src/Echelon/init.lua&quot;
             }
         }
     ],
-    &quot;types&quot;: [],
+    &quot;types&quot;: [
+        {
+            &quot;name&quot;: &quot;CacheSection&quot;,
+            &quot;desc&quot;: &quot;The type that section in the cache are represented by&quot;,
+            &quot;lua_type&quot;: &quot;{ Basis : Instance, ID : number, TTL : number, Used : number, Childs : {Instance} }&quot;,
+            &quot;private&quot;: true,
+            &quot;source&quot;: {
+                &quot;line&quot;: 45,
+                &quot;path&quot;: &quot;src/Echelon/init.lua&quot;
+            }
+        }
+    ],
     &quot;name&quot;: &quot;Echelon&quot;,
     &quot;desc&quot;: &quot;Component for easier, safer and more convenient work with Instance&quot;,
     &quot;source&quot;: {
-        &quot;line&quot;: 29,
+        &quot;line&quot;: 50,
         &quot;path&quot;: &quot;src/Echelon/init.lua&quot;
     }
-}</pre></details></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#types" class="table-of-contents__link toc-highlight">Types</a></li><li><a href="#properties" class="table-of-contents__link toc-highlight">Properties</a></li><li><a href="#functions" class="table-of-contents__link toc-highlight">Functions</a><ul><li><a href="#Setup" class="table-of-contents__link toc-highlight">:Setup</a></li><li><a href="#Tween" class="table-of-contents__link toc-highlight">:Tween</a></li><li><a href="#__index" class="table-of-contents__link toc-highlight">.__index</a></li><li><a href="#from" class="table-of-contents__link toc-highlight">.from</a></li><li><a href="#new" class="table-of-contents__link toc-highlight">.new</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2023 KurumiFT. Built with Moonwave and Docusaurus.</div></div></div></footer></div>
-<script src="/Devote/assets/js/runtime~main.985794b3.js"></script>
-<script src="/Devote/assets/js/main.a523ff2c.js"></script>
+}</pre></details></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#types" class="table-of-contents__link toc-highlight">Types</a></li><li><a href="#properties" class="table-of-contents__link toc-highlight">Properties</a></li><li><a href="#functions" class="table-of-contents__link toc-highlight">Functions</a><ul><li><a href="#Debris" class="table-of-contents__link toc-highlight">:Debris</a></li><li><a href="#Destroy" class="table-of-contents__link toc-highlight">:Destroy</a></li><li><a href="#Setup" class="table-of-contents__link toc-highlight">:Setup</a></li><li><a href="#Tween" class="table-of-contents__link toc-highlight">:Tween</a></li><li><a href="#__index" class="table-of-contents__link toc-highlight">.__index</a></li><li><a href="#cache" class="table-of-contents__link toc-highlight">.cache</a></li><li><a href="#from" class="table-of-contents__link toc-highlight">.from</a></li><li><a href="#new" class="table-of-contents__link toc-highlight">.new</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2023 KurumiFT. Built with Moonwave and Docusaurus.</div></div></div></footer></div>
+<script src="/Devote/assets/js/runtime~main.08727c96.js"></script>
+<script src="/Devote/assets/js/main.df5c3b88.js"></script>
 </body>
 </html>

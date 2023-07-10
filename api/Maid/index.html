@@ -6,8 +6,8 @@
 <title data-rh="true">Maid | Devote</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://KurumiFT.github.io/Devote/api/Maid"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><meta data-rh="true" property="og:title" content="Maid | Devote"><meta data-rh="true" name="description" content=" 
 Component for preventing memory leaks"><meta data-rh="true" property="og:description" content=" 
 Component for preventing memory leaks"><link data-rh="true" rel="canonical" href="https://KurumiFT.github.io/Devote/api/Maid"><link data-rh="true" rel="alternate" href="https://KurumiFT.github.io/Devote/api/Maid" hreflang="en"><link data-rh="true" rel="alternate" href="https://KurumiFT.github.io/Devote/api/Maid" hreflang="x-default"><link rel="stylesheet" href="/Devote/assets/css/styles.19a5646f.css">
-<link rel="preload" href="/Devote/assets/js/runtime~main.985794b3.js" as="script">
-<link rel="preload" href="/Devote/assets/js/main.a523ff2c.js" as="script">
+<link rel="preload" href="/Devote/assets/js/runtime~main.08727c96.js" as="script">
+<link rel="preload" href="/Devote/assets/js/main.df5c3b88.js" as="script">
 </head>
 <body class="navigation-with-keyboard">
 <script>!function(){function e(e){document.documentElement.setAttribute("data-theme",e)}var t=function(){var e=null;try{e=localStorage.getItem("theme")}catch(e){}return e}();null!==t?e(t):window.matchMedia("(prefers-color-scheme: dark)").matches?e("dark"):(window.matchMedia("(prefers-color-scheme: light)").matches,e("light"))}()</script><div id="__docusaurus">
@@ -22,9 +22,9 @@ Component for preventing memory leaks"><link data-rh="true" rel="canonical" href
 <span class="token keyword">local</span> myMaid <span class="token operator">=</span> Maid<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
 <span class="token keyword">local</span> mySignal <span class="token operator">=</span> myMaid<span class="token punctuation">:</span><span class="token function">Add</span><span class="token punctuation">(</span>Signal<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">-- Signal implement Destroy method</span>
 </code></pre>
-</div><h2 class="anchor anchorWithStickyNavbar_LWe7" id="functions">Functions<a href="#functions" class="hash-link" aria-label="Direct link to Functions" title="Direct link to Functions">​</a></h2><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="__index"><code style="text-decoration:none">__index</code><a href="#__index" class="hash-link" aria-label="Direct link to __index" title="Direct link to __index">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/KurumiFT/Devote/blob/master/src/Maid/init.lua#L62"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Maid<!-- -->.</code><code class="green_DgR4">__index</code><code>(</code><code>index<!-- -->: </code><code class="blue_P4bS">any</code><code>) → </code><code class="purple_ieR2">(</code><code class="green_DgR4">(</code><code class="blue_P4bS">...any</code><code class="green_DgR4">)</code><code class="green_DgR4"> → </code><code class="green_DgR4">(</code><code class="blue_P4bS">...any</code><code class="green_DgR4">)</code><code class="purple_ieR2">)</code><code class="op_lSLc"> | </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/Devote/api/Maid#Garbage">Garbage?</a></code></div><div>
+</div><h2 class="anchor anchorWithStickyNavbar_LWe7" id="functions">Functions<a href="#functions" class="hash-link" aria-label="Direct link to Functions" title="Direct link to Functions">​</a></h2><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="__index"><code style="text-decoration:none">__index</code><a href="#__index" class="hash-link" aria-label="Direct link to __index" title="Direct link to __index">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/KurumiFT/Devote/blob/master/src/Maid/init.lua#L71"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Maid<!-- -->.</code><code class="green_DgR4">__index</code><code>(</code><code>index<!-- -->: </code><code class="blue_P4bS">any</code><code>) → </code><code class="purple_ieR2">(</code><code class="green_DgR4">(</code><code class="blue_P4bS">...any</code><code class="green_DgR4">)</code><code class="green_DgR4"> → </code><code class="green_DgR4">(</code><code class="blue_P4bS">...any</code><code class="green_DgR4">)</code><code class="purple_ieR2">)</code><code class="op_lSLc"> | </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/Devote/api/Maid#Garbage">Garbage?</a></code></div><div>
 <p>Return Maid's method if exist or object from <code>Closet</code> by given index <em>(could be nil)</em></p>
-</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="__newindex"><code style="text-decoration:none">__newindex</code><a href="#__newindex" class="hash-link" aria-label="Direct link to __newindex" title="Direct link to __newindex">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/KurumiFT/Devote/blob/master/src/Maid/init.lua#L91"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Maid<!-- -->.</code><code class="green_DgR4">__newindex</code><code>(</code><div class="inset_uKQm"><div><code>index<!-- -->: </code><code class="blue_P4bS">any</code><code>,</code></div><div><code>value<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/Devote/api/Maid#Garbage">Garbage?</a></code></div></div><code>) → </code><code>(</code><code>)</code></div><div>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="__newindex"><code style="text-decoration:none">__newindex</code><a href="#__newindex" class="hash-link" aria-label="Direct link to __newindex" title="Direct link to __newindex">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/KurumiFT/Devote/blob/master/src/Maid/init.lua#L100"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Maid<!-- -->.</code><code class="green_DgR4">__newindex</code><code>(</code><div class="inset_uKQm"><div><code>index<!-- -->: </code><code class="blue_P4bS">any</code><code>,</code></div><div><code>value<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/Devote/api/Maid#Garbage">Garbage?</a></code></div></div><code>) → </code><code>(</code><code>)</code></div><div>
 <p>You can add items into Maid by setting value on index</p>
 <div class="admonition admonition-tip alert alert--success">
   <div class="admonition-heading">
@@ -45,11 +45,35 @@ self<span class="token punctuation">.</span>myMaid<span class="token punctuation
     <span class="token punctuation">...</span>
 <span class="token keyword">end</span>
 </code></pre>
-</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="new"><code style="text-decoration:none">new</code><a href="#new" class="hash-link" aria-label="Direct link to new" title="Direct link to new">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/KurumiFT/Devote/blob/master/src/Maid/init.lua#L106"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Maid<!-- -->.</code><code class="green_DgR4">new</code><code>(</code><code>...<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/Devote/api/Maid#Garbage">Garbage?</a></code><code>) → </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/Devote/api/Maid">Maid</a></code></div><div>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="new"><code style="text-decoration:none">new</code><a href="#new" class="hash-link" aria-label="Direct link to new" title="Direct link to new">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/KurumiFT/Devote/blob/master/src/Maid/init.lua#L115"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Maid<!-- -->.</code><code class="green_DgR4">new</code><code>(</code><code>...<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/Devote/api/Maid#Garbage">Garbage?</a></code><code>) → </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/Devote/api/Maid">Maid</a></code></div><div>
 <p>Return new <code>Maid</code> object</p>
 <pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> myMaid <span class="token operator">=</span> Maid<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
 </code></pre>
-</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="Add"><code style="text-decoration:none">Add</code><a href="#Add" class="hash-link" aria-label="Direct link to Add" title="Direct link to Add">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/KurumiFT/Devote/blob/master/src/Maid/init.lua#L126"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Maid<!-- -->:</code><code class="green_DgR4">Add</code><code>(</code><code>...<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/Devote/api/Maid#Garbage">Garbage</a></code><code>) → </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/Devote/api/Maid#Garbage">...Garbage</a></code></div><div>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="Extend"><code style="text-decoration:none">Extend</code><a href="#Extend" class="hash-link" aria-label="Direct link to Extend" title="Direct link to Extend">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/KurumiFT/Devote/blob/master/src/Maid/init.lua#L142"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Maid<!-- -->:</code><code class="green_DgR4">Extend</code><code>(</code><code>index<!-- -->: </code><code class="blue_P4bS">string?</code><code>) → </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/Devote/api/Maid">Maid</a></code></div><div>
+<p>Extend Maid by creating sub-maid<br>If Sub-Maid on index is exist then return it else create new and return</p>
+<div class="admonition admonition-warning alert alert--danger">
+  <div class="admonition-heading">
+    <h5><span class="admonition-icon"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16">
+          <path d="M5.05.31c.81 2.17.41 3.38-.52 4.31C3.55 5.67 1.98 6.45.9 7.98c-1.45 2.05-1.7 6.53 3.53 7.7-2.2-1.16-2.67-4.52-.3-6.61-.61 2.03.53 3.33 1.94 2.86 1.39-.47 2.3.53 2.27 1.67-.02.78-.31 1.44-1.13 1.81 3.42-.59 4.78-3.42 4.78-5.56 0-2.84-2.53-3.22-1.25-5.61-1.52.13-2.03 1.13-1.89 2.75.09 1.08-1.02 1.8-1.86 1.33-.67-.41-.66-1.19-.06-1.78C8.18 5.31 8.68 2.45 5.05.32L5.03.3l.02.01z"></path>
+        </svg></span>warning</h5>
+  </div>
+  <div class="admonition-content">
+    <pre><code>Use :Extend only using index binding (set index)  
+Else you can create a lot of sub-maids and get performance issues due to floating objects
+</code></pre>
+  </div>
+</div>
+<pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> myMaid <span class="token operator">=</span> Maid<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">local</span> tweensMaid <span class="token operator">=</span> Maid<span class="token punctuation">:</span><span class="token function">Extend</span><span class="token punctuation">(</span><span class="token string">'Tweens'</span><span class="token punctuation">)</span>
+
+tweensMaid<span class="token punctuation">:</span><span class="token function">Add</span><span class="token punctuation">(</span>someTween<span class="token punctuation">)</span>
+<span class="token comment">--...</span>
+myMaid<span class="token punctuation">:</span><span class="token function">Clean</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">-- Will clean all tweens in 'Tweens' sub-maid, but don't remove this</span>
+
+<span class="token comment">--In other part of script</span>
+<span class="token keyword">local</span> simillaryTweensMaid <span class="token operator">=</span> Maid<span class="token punctuation">:</span><span class="token function">Extend</span><span class="token punctuation">(</span><span class="token string">'Tweens'</span><span class="token punctuation">)</span> <span class="token comment">-- Here i get already exist 'Tweens' sub-maid</span>
+</code></pre>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="Add"><code style="text-decoration:none">Add</code><a href="#Add" class="hash-link" aria-label="Direct link to Add" title="Direct link to Add">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/KurumiFT/Devote/blob/master/src/Maid/init.lua#L171"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Maid<!-- -->:</code><code class="green_DgR4">Add</code><code>(</code><code>...<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/Devote/api/Maid#Garbage">Garbage</a></code><code>) → </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/Devote/api/Maid#Garbage">...Garbage</a></code></div><div>
 <p>Push Garbage into Maid</p>
 <pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> vfxPart <span class="token operator">=</span> Instance<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token string">'Part'</span><span class="token punctuation">)</span>
 <span class="token comment">-- TODO</span>
@@ -67,7 +91,7 @@ myMaid<span class="token punctuation">:</span><span class="token function">Add</
 </code></pre>
   </div>
 </div>
-</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="Destroy"><code style="text-decoration:none">Destroy</code><a href="#Destroy" class="hash-link" aria-label="Direct link to Destroy" title="Direct link to Destroy">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/KurumiFT/Devote/blob/master/src/Maid/init.lua#L148"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Maid<!-- -->:</code><code class="green_DgR4">Destroy</code><code>(</code><code>) → </code><code>(</code><code>)</code></div><div>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="Destroy"><code style="text-decoration:none">Destroy</code><a href="#Destroy" class="hash-link" aria-label="Direct link to Destroy" title="Direct link to Destroy">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/KurumiFT/Devote/blob/master/src/Maid/init.lua#L193"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Maid<!-- -->:</code><code class="green_DgR4">Destroy</code><code>(</code><code>) → </code><code>(</code><code>)</code></div><div>
 <p>Clean Maid from Garbage</p>
 <pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> myMaid <span class="token operator">=</span> Maid<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
 myMaid<span class="token punctuation">[</span><span class="token string">'testInstance'</span><span class="token punctuation">]</span> <span class="token operator">=</span> Instance<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token string">'Part'</span><span class="token punctuation">)</span>
@@ -78,7 +102,7 @@ myMaid<span class="token punctuation">:</span><span class="token function">Destr
 
 <span class="token function">print</span><span class="token punctuation">(</span>myMaid<span class="token punctuation">[</span><span class="token string">'testInstance'</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token comment">-- nil</span>
 </code></pre>
-</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="Clean"><code style="text-decoration:none">Clean</code><a href="#Clean" class="hash-link" aria-label="Direct link to Clean" title="Direct link to Clean">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/KurumiFT/Devote/blob/master/src/Maid/init.lua#L170"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Maid<!-- -->:</code><code class="green_DgR4">Clean</code><code>(</code><code>) → </code><code>(</code><code>)</code></div><div>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="Clean"><code style="text-decoration:none">Clean</code><a href="#Clean" class="hash-link" aria-label="Direct link to Clean" title="Direct link to Clean">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/KurumiFT/Devote/blob/master/src/Maid/init.lua#L223"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Maid<!-- -->:</code><code class="green_DgR4">Clean</code><code>(</code><code>) → </code><code>(</code><code>)</code></div><div>
 <p><em>Allias of <code>Maid:Destroy()</code></em></p>
 <pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> myMaid <span class="token operator">=</span> Maid<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
 myMaid<span class="token punctuation">[</span><span class="token string">'testInstance'</span><span class="token punctuation">]</span> <span class="token operator">=</span> Instance<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token string">'Part'</span><span class="token punctuation">)</span>
@@ -109,7 +133,7 @@ myMaid<span class="token punctuation">:</span><span class="token function">Clean
             ],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 62,
+                &quot;line&quot;: 71,
                 &quot;path&quot;: &quot;src/Maid/init.lua&quot;
             }
         },
@@ -131,7 +155,7 @@ myMaid<span class="token punctuation">:</span><span class="token function">Clean
             &quot;returns&quot;: [],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 91,
+                &quot;line&quot;: 100,
                 &quot;path&quot;: &quot;src/Maid/init.lua&quot;
             }
         },
@@ -153,7 +177,29 @@ myMaid<span class="token punctuation">:</span><span class="token function">Clean
             ],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 106,
+                &quot;line&quot;: 115,
+                &quot;path&quot;: &quot;src/Maid/init.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;Extend&quot;,
+            &quot;desc&quot;: &quot;Extend Maid by creating sub-maid  \nIf Sub-Maid on index is exist then return it else create new and return\n:::warning\n    Use :Extend only using index binding (set index)  \n    Else you can create a lot of sub-maids and get performance issues due to floating objects\n:::\n\n```lua\nlocal myMaid = Maid.new()\nlocal tweensMaid = Maid:Extend(&#x27;Tweens&#x27;)\n\ntweensMaid:Add(someTween)\n--...\nmyMaid:Clean() -- Will clean all tweens in &#x27;Tweens&#x27; sub-maid, but don&#x27;t remove this\n\n--In other part of script\nlocal simillaryTweensMaid = Maid:Extend(&#x27;Tweens&#x27;) -- Here i get already exist &#x27;Tweens&#x27; sub-maid\n```&quot;,
+            &quot;params&quot;: [
+                {
+                    &quot;name&quot;: &quot;index&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;string?&quot;
+                }
+            ],
+            &quot;returns&quot;: [
+                {
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;Maid\r\n&quot;
+                }
+            ],
+            &quot;function_type&quot;: &quot;method&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 142,
                 &quot;path&quot;: &quot;src/Maid/init.lua&quot;
             }
         },
@@ -175,7 +221,7 @@ myMaid<span class="token punctuation">:</span><span class="token function">Clean
             ],
             &quot;function_type&quot;: &quot;method&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 126,
+                &quot;line&quot;: 171,
                 &quot;path&quot;: &quot;src/Maid/init.lua&quot;
             }
         },
@@ -186,7 +232,7 @@ myMaid<span class="token punctuation">:</span><span class="token function">Clean
             &quot;returns&quot;: [],
             &quot;function_type&quot;: &quot;method&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 148,
+                &quot;line&quot;: 193,
                 &quot;path&quot;: &quot;src/Maid/init.lua&quot;
             }
         },
@@ -197,7 +243,7 @@ myMaid<span class="token punctuation">:</span><span class="token function">Clean
             &quot;returns&quot;: [],
             &quot;function_type&quot;: &quot;method&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 170,
+                &quot;line&quot;: 223,
                 &quot;path&quot;: &quot;src/Maid/init.lua&quot;
             }
         }
@@ -210,6 +256,16 @@ myMaid<span class="token punctuation">:</span><span class="token function">Clean
             &quot;private&quot;: true,
             &quot;source&quot;: {
                 &quot;line&quot;: 31,
+                &quot;path&quot;: &quot;src/Maid/init.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;Sub&quot;,
+            &quot;desc&quot;: &quot;Store all sub maids in `Maid` object  \nGet sub maid only by using \&quot;:Extend(index)\&quot;&quot;,
+            &quot;lua_type&quot;: &quot;{ [string | number] : Maid }&quot;,
+            &quot;private&quot;: true,
+            &quot;source&quot;: {
+                &quot;line&quot;: 40,
                 &quot;path&quot;: &quot;src/Maid/init.lua&quot;
             }
         }
@@ -228,11 +284,11 @@ myMaid<span class="token punctuation">:</span><span class="token function">Clean
     &quot;name&quot;: &quot;Maid&quot;,
     &quot;desc&quot;: &quot; \nComponent for preventing memory leaks&quot;,
     &quot;source&quot;: {
-        &quot;line&quot;: 36,
+        &quot;line&quot;: 45,
         &quot;path&quot;: &quot;src/Maid/init.lua&quot;
     }
-}</pre></details></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#types" class="table-of-contents__link toc-highlight">Types</a><ul><li><a href="#Garbage" class="table-of-contents__link toc-highlight">Garbage</a></li></ul></li><li><a href="#properties" class="table-of-contents__link toc-highlight">Properties</a></li><li><a href="#functions" class="table-of-contents__link toc-highlight">Functions</a><ul><li><a href="#Add" class="table-of-contents__link toc-highlight">:Add</a></li><li><a href="#Clean" class="table-of-contents__link toc-highlight">:Clean</a></li><li><a href="#Destroy" class="table-of-contents__link toc-highlight">:Destroy</a></li><li><a href="#__index" class="table-of-contents__link toc-highlight">.__index</a></li><li><a href="#__newindex" class="table-of-contents__link toc-highlight">.__newindex</a></li><li><a href="#new" class="table-of-contents__link toc-highlight">.new</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2023 KurumiFT. Built with Moonwave and Docusaurus.</div></div></div></footer></div>
-<script src="/Devote/assets/js/runtime~main.985794b3.js"></script>
-<script src="/Devote/assets/js/main.a523ff2c.js"></script>
+}</pre></details></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#types" class="table-of-contents__link toc-highlight">Types</a><ul><li><a href="#Garbage" class="table-of-contents__link toc-highlight">Garbage</a></li></ul></li><li><a href="#properties" class="table-of-contents__link toc-highlight">Properties</a></li><li><a href="#functions" class="table-of-contents__link toc-highlight">Functions</a><ul><li><a href="#Add" class="table-of-contents__link toc-highlight">:Add</a></li><li><a href="#Clean" class="table-of-contents__link toc-highlight">:Clean</a></li><li><a href="#Destroy" class="table-of-contents__link toc-highlight">:Destroy</a></li><li><a href="#Extend" class="table-of-contents__link toc-highlight">:Extend</a></li><li><a href="#__index" class="table-of-contents__link toc-highlight">.__index</a></li><li><a href="#__newindex" class="table-of-contents__link toc-highlight">.__newindex</a></li><li><a href="#new" class="table-of-contents__link toc-highlight">.new</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2023 KurumiFT. Built with Moonwave and Docusaurus.</div></div></div></footer></div>
+<script src="/Devote/assets/js/runtime~main.08727c96.js"></script>
+<script src="/Devote/assets/js/main.df5c3b88.js"></script>
 </body>
 </html>
