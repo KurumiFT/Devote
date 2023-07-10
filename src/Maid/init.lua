@@ -29,6 +29,15 @@ type Garbage = Instance | table | RBXScriptConnection
     Store all garbage in `Maid` object
 ]=]
 
+--[=[
+    @prop Sub { [string | number] : Maid }
+    @within Maid
+    @private
+
+    Store all sub maids in `Maid` object  
+    Get sub maid only by using ":Extend(index)"
+]=]
+
 --[=[ 
     @class Maid
     Component for preventing memory leaks
@@ -105,8 +114,44 @@ end
 ]=]
 function Maid.new(... : Garbage?) : Maid
     return setmetatable({
-        Closet = {...}
+        Closet = {...},
+        Sub = {}, --* Sub maids
     }, Maid)
+end
+
+--[=[
+    Extend Maid by creating sub-maid  
+    If Sub-Maid on index is exist then return it else create new and return
+    :::warning
+        Use :Extend only using index binding (set index)  
+        Else you can create a lot of sub-maids and get performance issues due to floating objects
+    :::
+
+    ```lua
+    local myMaid = Maid.new()
+    local tweensMaid = Maid:Extend('Tweens')
+
+    tweensMaid:Add(someTween)
+    --...
+    myMaid:Clean() -- Will clean all tweens in 'Tweens' sub-maid, but don't remove this
+
+    --In other part of script
+    local simillaryTweensMaid = Maid:Extend('Tweens') -- Here i get already exist 'Tweens' sub-maid
+    ```
+]=]
+function Maid:Extend(index : string?) : Maid
+    local returnableMaid
+    if index then
+        if not self.Sub[index] then
+            self.Sub[index] = Maid.new()
+        end
+        returnableMaid = self.Sub[index]
+    else
+        returnableMaid = Maid.new()
+        table.insert(self.Sub, returnableMaid)
+    end
+
+    return returnableMaid
 end
 
 --[=[
@@ -146,11 +191,19 @@ end
     ```
 ]=]
 function Maid:Destroy()
+    -- Clear closet
     for _, v in pairs(self.Closet) do
         cleanUp(v)
     end
 
     self.Closet = {}
+
+    -- Call `Destroy` method for every sub maid and then clear table 
+    for _, v in pairs(self.Sub) do
+        v:Destroy()
+    end
+
+    self.Sub = {}
 end
 
 --[=[
@@ -168,13 +221,7 @@ end
     ```
 ]=]
 function Maid:Clean()
-    for _, v in pairs(self.Closet) do
-        cleanUp(v)
-    end
-
-    self.Closet = {}
+    self:Destroy()
 end
 
 return Maid
-
-

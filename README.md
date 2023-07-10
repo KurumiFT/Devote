@@ -10,7 +10,7 @@ At the moment, the package is in heavy development and you can watch how it will
 
 ## What is this Devote inspired by?
 
-Many solutions interested me from Sleitnik and many other grandiose developers such as Evaera and so on. A lot of cool things are also implemented in the world of Web development.
+Many solutions interested me from Sleitnick and many other grandiose developers such as Evaera and so on. A lot of cool things are also implemented in the world of Web development.
 
 A lot of ideas that need to be implemented come straight from my Wishlist, which only increase in number every day of routine development.
 
